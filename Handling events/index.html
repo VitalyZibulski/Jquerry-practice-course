@@ -1,0 +1,25 @@
+<div id="textBox"></div>
+
+<script>
+$("#textBox").on('click',mouseIsClicked);
+$("#textBox").on('mouseleave', mouseLeaves);
+
+function mouseIsClicked(){
+$("#textBox").html("<h4>You clicked me</h4>");
+
+}
+
+function mouseLeaves(){
+$("#textBox").html("<h4>Where are you going?");
+    }
+</script>
+
+
+<style>
+    #textBox{
+        width:150px;
+        height:150px;
+        border:1px solid black;
+        background-color:aliceblue;
+    }
+</style>
