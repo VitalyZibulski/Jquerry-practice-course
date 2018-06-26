@@ -1,0 +1,22 @@
+<a href="#" id="slide-up">slide-Up</a> | <a href="#" id="slide-down">slide-Down</a> | <a href="#" id="toggleSlide">Toggle</a>
+
+<div id="textBox">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quaerat fugiat sit quos suscipit, natus obcaecati. Magnam fugiat, sapiente. Sit, dignissimos est! Corporis molestias, qui mollitia dolore iure modi suscipit?</p>
+</div>
+
+<script>
+    $("#slide-up").click(function(){
+        $("#textBox").slideUp("2000", "linear");
+    });
+
+    $("#slide-down").click(function(){
+        $("#textBox").slideDown("2000", "linear");
+    });
+
+    $("#toggleSlide").click(function(){
+        $("#textBox").slideToggle("2000", function(){
+            alert("Done");
+        });
+    });
+</script>
