@@ -1,0 +1,36 @@
+<a href="#" id="grow">Grow</a> | <a href="#" id="move">Move</a>
+| <a href="#" id="bigger">Bigger</a> |
+<a href="#" id="many">Many Things</a>
+<div id="textBox">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quaerat fugiat sit quos suscipit, natus obcaecati. Magnam fugiat, sapiente. Sit, dignissimos est! Corporis molestias, qui mollitia dolore iure modi suscipit?</p>
+</div>
+
+<script>
+    $("#move").click(function(){
+        $("#textBox").animate({marginLeft:"200px"},
+            1000);
+    });
+
+    $("#bigger").click(function(){
+        $("#textBox").animate({fontSize:"40px"},
+            3000);
+    });
+
+    $("#many").click(function(){
+        $("#textBox").animate({fontSize:"40px",marginLeft:"400px", width:"600px"},
+            3000);
+    });
+</script>
+
+
+<style>
+    #textBox{
+        width:200px;
+        height:200px;
+        background-color:#ccc;
+        position:absolute;
+        margin-top:20px;
+    }
+
+</style>
