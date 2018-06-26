@@ -1,0 +1,33 @@
+<a href="#" id="fadeIn">fadeIn</a> | <a href="#" id="fadeOut">fadeOut</a>
+
+<div id="textBox">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quaerat fugiat sit quos suscipit, natus obcaecati. Magnam fugiat, sapiente. Sit, dignissimos est! Corporis molestias, qui mollitia dolore iure modi suscipit?</p>
+</div>
+
+<script>
+    $("#fadeIn").on("click", function(){
+
+        $("#textBox").fadeIn(3000, function(){
+            alert("I'am Done IN");
+        });
+
+    });
+
+    $("#fadeOut").on("click", function(){
+
+        $("#textBox").fadeOut("fast", function(){
+            alert("I'am Done Fanding Out")
+        });
+
+    });
+</script>
+
+
+<style>
+    .textBox{
+        display:none
+    }.textBox{
+         display:none
+     }
+</style>
