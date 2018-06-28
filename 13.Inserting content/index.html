@@ -1,0 +1,24 @@
+<a id="append" href="#">Append</a>
+
+<a id="prepend" href="#">Prepend</a>
+
+<div id="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos pariatur sapiente in, nihil, maxime modi sed! Aliquid autem nihil eius dolor, enim quia provident, omnis aliquam voluptas labore sapiente, recusandae.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos pariatur sapiente in, nihil, maxime modi sed! Aliquid autem nihil eius dolor, enim quia provident, omnis aliquam voluptas labore sapiente, recusandae.</p>
+
+</div>
+
+<script>
+$("#append").click(function(){
+
+$("p:first").append("appended");
+
+
+});
+
+$("#prepend").click(function(){
+
+$("p:first").prepend("prepended");
+});
+
+</script>
