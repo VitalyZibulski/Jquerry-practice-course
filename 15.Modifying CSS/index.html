@@ -1,0 +1,14 @@
+<script>
+    $("#add-class").click(function(){
+       $("p:first").addClass('color');
+    });
+    $("#remove-class").click(function(){
+       $("p:first").removeClass('color');
+    });
+    $("#toggle-class").click(function(){
+       $("p:first").toggleClass('color');
+    });
+    $("increase-class").click(function(){
+       $("p:first").css("font-size","+=1px");
+    });
+</script>
