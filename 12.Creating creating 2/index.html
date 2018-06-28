@@ -1,0 +1,28 @@
+<a id="create" href="#">Create</a>
+
+<a id="create_text" href="#">Create text</a>
+
+<a id="create_variable" href="#">Create Text</a>
+
+
+<div id="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos pariatur sapiente in, nihil, maxime modi sed! Aliquid autem nihil eius dolor, enim quia provident, omnis aliquam voluptas labore sapiente, recusandae.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos pariatur sapiente in, nihil, maxime modi sed! Aliquid autem nihil eius dolor, enim quia provident, omnis aliquam voluptas labore sapiente, recusandae.</p>
+
+</div>
+
+<script>
+    $("#create_text").click(function(){
+        $("#container p:last").text("Replaced and created this text");
+    });
+</script>
+
+-----------------------------------------------------------------------------------------------------------
+<script>
+$("#create_variable").click(function(){
+var newText = $("#container p:first");
+
+$("#container p:last").html(newText);
+});
+
+</script>
